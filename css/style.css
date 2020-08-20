@@ -14,6 +14,26 @@ body {
   margin: 0 auto;
 }
 
+.button {
+  background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
+  box-shadow: 0px 4px 0px #b68500;
+  border: none;
+  border-radius: 5px 5px 10px 10px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.social-link-image {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hero section */
+
 .hero {
   padding-top: 50px;
   padding-bottom: 155px;
@@ -40,34 +60,32 @@ body {
 }
 
 .hero-subtitle {
-  display: inline-block;
+  display: block;
   color: #ffbb01;
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 14px;
+  animation-delay: 0.2s;
 }
 
 .hero-title {
+  display: block;
   font-weight: bold;
   font-size: 50px;
   line-height: 59px;
   margin-top: 0;
   margin-bottom: 20px;
+  animation-delay: 0.4s;
 }
 
-.hero-desctiption {
+.hero-description {
+  display: block;
   font-size: 16px;
   line-height: 28px;
   margin-top: 0;
   margin-bottom: 38px;
   max-width: 420px;
-}
-
-.button {
-  background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
-  box-shadow: 0px 4px 0px #b68500;
-  border: none;
-  border-radius: 5px 5px 10px 10px;
+  animation-delay: 0.6s;
 }
 
 .hero-button {
@@ -78,6 +96,7 @@ body {
   line-height: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  animation-delay: 0.8s;
 }
 
 .hero-avatar {
@@ -90,4 +109,178 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   border: 10px solid white;
+  animation-delay: 1.5s;
+}
+
+/* Features section */
+
+.features {
+  background-color: #000000;
+  padding-top: 64px;
+  padding-bottom: 29px;
+}
+
+.features-title {
+  margin: 0;
+  margin-bottom: 84px;
+}
+
+.features-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-item {
+  flex-basis: 30%;
+  margin: 0;
+  margin-bottom: 63px;
+}
+
+.features-item-image {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.features-item-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.features-item-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+/* contacts section */
+
+.contacts {
+  padding-top: 57px;
+  padding-bottom: 148px;
+}
+
+.contacts-title {
+  margin: 0;
+  margin-bottom: 84px;
+}
+
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-form {
+  background-color: #fff;
+  box-shadow: -5px 5px 0px #ffc41d;
+  border-radius: 5px;
+  max-width: 380px;
+  padding: 40px 35px 50px 35px;
+}
+
+.contacts-form-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: black;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.contacts-form-input {
+  background: #f8f8f8;
+  border: none;
+  box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+  padding: 18px 20px;
+  padding-left: 49px;
+  width: 100%;
+  color: #949494;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.contacts-form-input-name {
+  margin-bottom: 17px;
+  background-image: url(../images/user-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.contacts-form-input-number {
+  background-image: url(../images/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.contacts-form-button {
+  margin-top: 0;
+  padding: 24px 42px;
+  color: #2e2e30;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 26px;
+  width: 100%;
+}
+
+.contacts-content {
+  flex-basis: 50%;
+}
+
+.contacts-content-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 53px;
+}
+
+.contacts-content-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 42px;
+}
+
+.contacts-content-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-content-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.contacts-content-text:hover {
+  text-decoration: underline;
+}
+
+.contacts-content-social-links {
+  margin-bottom: 73px;
+}
+
+.contacts-content-social-link {
+  margin-right: 20px;
+  max-width: 17px;
+}
+
+.contacts-content-politics {
+  margin: 0;
+  color: #a5a5a5;
 }
